@@ -1,0 +1,116 @@
+/* TP 4 — Formulaire, tableau et résumé (diapos 48 et 53). */
+body {
+    margin: 0;
+    padding: 32px 16px;
+    font-family: Calibri, Arial, sans-serif;
+    color: #222;
+    background: #f5f7f9;
+  }
+  
+  #table_container {
+    width: min(800px, 100%);
+    margin: 0 auto;
+  }
+  
+  #form_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .form_label {
+    font-weight: bold;
+  }
+  
+  .form_field {
+    width: 145px;
+    padding: 7px;
+    border: 1px solid #aaa;
+  }
+  
+  button {
+    padding: 8px 12px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  #add_row {
+    background: #16883b;
+  }
+  
+  #show_table {
+    margin-top: 10px;
+    background: #b78200;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 9px 10px;
+  }
+  
+  th {
+    color: #fff;
+    background: #0781b2;
+  }
+  
+  .col_number {
+    text-align: center;
+  }
+  
+  .col_text {
+    text-align: left;
+  }
+  
+  .col_chkbox {
+    text-align: center;
+  }
+  
+  #container_summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 0 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+  }
+  
+  #container_summary p {
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 600px) {
+    #form_container {
+      align-items: stretch;
+      flex-direction: column;
+    }
+  
+    .form_field {
+      width: 100%;
+    }
+  
+    #container_summary {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0;
+    }
+  }

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Étape 4 — Résumé du tableau</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="table_container">
+    <h1>Étape 4 — Résumé du tableau</h1>
+
+    <button id="add_row" type="button">Ajouter</button>
+    <button id="show_table" type="button">Tableau Console</button>
+
+    <table id="persons_table">
+      <thead>
+        <tr>
+          <th class="col_number">N°</th>
+          <th class="col_text">Nom</th>
+          <th class="col_text">Prénom</th>
+          <th class="col_number">Points</th>
+          <th class="col_chkbox">Select</th>
+        </tr>
+      </thead>
+      <tbody id="persons_body"></tbody>
+    </table>
+
+    <div id="container_summary">
+      <p id="p1">0 ligne</p>
+      <p id="p2"></p>
+      <p id="p3">Total points = 0</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
